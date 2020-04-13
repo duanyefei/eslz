@@ -84,6 +84,10 @@ Page({
             this.setData({
                 serverpay:this.data.secondprice * 0.18.toFixed(2)
             })
+        }else{
+            this.setData({
+                serverpay:0
+            })
         }
     },
     getDate:function(e){
@@ -98,6 +102,10 @@ Page({
       if(this.data.is_verify==1){
           this.setData({
               serverpay:this.data.secondprice * 0.18.toFixed(2)
+          })
+      }else{
+          this.setData({
+              serverpay:0
           })
       }
 
