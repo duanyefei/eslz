@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="257dfa15-0917-425d-990e-5f9c169f524b" name="Default Changelist" comment="修改项目名称" />
+    <list default="true" id="257dfa15-0917-425d-990e-5f9c169f524b" name="Default Changelist" comment="修改项目名称">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/wafer2-client-sdk/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/wafer2-client-sdk/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/wafer2-client-sdk/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/wafer2-client-sdk/lib/constants.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/wafer2-client-sdk/lib/login.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/wafer2-client-sdk/lib/request.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/wafer2-client-sdk/lib/session.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/wafer2-client-sdk/lib/tunnel.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/wafer2-client-sdk/lib/utils.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/wafer2-client-sdk/lib/wxTunnel.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/wafer2-client-sdk/package.json" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -211,8 +224,8 @@
       <file leaf-file-name="index.wxml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pages/sellerList/index.wxml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="403">
-              <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+            <state relative-caret-position="207">
+              <caret line="9" column="52" lean-forward="false" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="52" />
               <folding />
             </state>
           </provider>
@@ -435,6 +448,24 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sell" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eslz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eslz" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="img" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
@@ -626,7 +657,7 @@
       <workItem from="1585527657841" duration="19289000" />
       <workItem from="1585612899613" duration="13061000" />
       <workItem from="1585699082590" duration="814000" />
-      <workItem from="1586737805835" duration="786000" />
+      <workItem from="1586737805835" duration="2437000" />
     </task>
     <task id="LOCAL-00001" summary="修改项目名称">
       <created>1542702758003</created>
@@ -639,7 +670,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="525550000" />
+    <option name="totallyTimeSpent" value="527201000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -651,7 +682,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1456" height="876" extended-state="0" />
+    <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18263888" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1020,8 +1051,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pages/sellerList/index.wxml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="403">
-          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        <state relative-caret-position="207">
+          <caret line="9" column="52" lean-forward="false" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="52" />
           <folding />
         </state>
       </provider>
