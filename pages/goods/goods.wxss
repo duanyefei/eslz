@@ -1,0 +1,184 @@
+/* pages/cart/index.wxss */
+.top{
+  display: flex;
+  line-height: 44px;
+  border-top: 1px solid #EDEDED;
+  border-bottom: 1px solid #EDEDED;
+  font-size: 14px;
+  padding: 0 16px;
+  align-items: center;
+}
+
+.top .city{
+  padding-left: 30px;
+  color: #999;
+}
+
+.top .edit-btn{
+  color: #6EA1F5;
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.label{
+  width: 20px;
+  height:20px;
+}
+
+.label image {
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+
+.list .item{
+  display: flex;
+  border-bottom: 1px solid #EDEDED;
+  height: 240rpx;
+  align-items: center;
+}
+
+.list .label{
+  flex: 0 0 auto;
+  padding:10px 0;
+}
+
+.list .content{
+  flex-grow: 1;
+  display:flex;
+}
+
+.list .content image{
+  flex: 0 0 auto;
+  height: 160rpx;
+  width: 160rpx;
+  padding:40rpx 17rpx;
+}
+
+.list .content .text{
+  flex-grow: 1;
+  font-size: 12px;
+  margin-top: 5px;
+
+}
+
+.list .content .title{
+    height: 49rpx;
+    overflow: hidden;
+    margin-top: 17rpx;
+    white-space: nowrap;
+}
+
+.list .content .phone{
+  float: right;
+  margin-right: 17rpx;
+  color: #FFA500;
+}
+.list .content .username {
+    width: 270rpx;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: inline-block;
+}
+
+.list .content .spec{
+ font-size: 10px;
+ color: #9C9C9C;
+ overflow: hidden;
+ text-overflow: ellipsis;
+ -webkit-line-clamp: 1;
+ -webkit-box-orient: vertical;
+ width: 93%;
+ height: 52%%;
+}
+
+
+
+.list .content .price text:nth-child(1){
+  color: #FFA500;
+  flex: 1 0 50%;
+}
+
+.list .content .price text:nth-child(2){
+  color: #999999;
+  flex: 1 0 50%;
+  text-align: right;
+}
+
+.bottom{
+  display: flex;
+  font-size: 14px;
+}
+
+.bottom .left{
+  display: flex;
+  flex: 1 0 70%;
+  align-items: center;
+}
+
+.bottom .left .text{
+  display: flex;
+  flex: 0 0 50%;
+  
+}
+
+.bottom .left .total-price{
+  flex: 0 0 50%;
+  color: #333333;
+  text-align: right;
+}
+
+.bottom .right{
+  flex: 1 0 30%;
+  background: #ff5f19;
+  font-size: 17px;
+  color: #FFFFFF;
+  text-align: center;
+  line-height: 10vh;
+}
+
+.edit{
+  padding-right: 0px !important;
+}
+
+.edit .title{
+  display: flex;
+  width: 70%;
+  line-height: 32px;
+  text-align: center;
+  border: 1px solid #D5D5D5;
+  height: 32px !important;
+  margin: 5px 0;
+}
+
+.edit .title input {
+  flex: 1 0 33.333%;
+  border-left: 1px solid #D5D5D5;
+  border-right: 1px solid #D5D5D5;
+  height: 32px;
+}
+
+.edit .title text {
+  flex: 1 0 33.333%;
+  height: 32px;
+  font-size: 18px;
+}
+
+.edit .del-btn{
+  line-height:118px;
+  width: 65px;
+  background: #ff5f19;
+  font-size: 14px;
+  color: #fff;
+  text-align: center;
+}
+
+.prohibit{
+  background: #E5E5E5 !important;
+}
+
+
+
+

@@ -1,0 +1,6 @@
+
+
+<view class="wxpay_logo">
+<image src="/ima/wxpay_logo.jpg" mode="widthFix"></image>
+</view>
+<button class="wxpay_btn" type="primary" bindtap="pay">立即支付</button>

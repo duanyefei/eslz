@@ -1,0 +1,37 @@
+<template name="productView2" >
+  <view class="product-view2"  bindtap="onProductTap" data-index="{{index}}">
+    <image class="product-img2" src="{{img}}"></image>
+    <text class="product-text2">{{name}}</text>
+    <text class="product-price2" style="{{theme.styles.primaryText}}">￥{{sale_price}}</text>
+    <image class="origin-img" src="{{origin_img}}"></image>
+  </view>
+</template>
+
+<!--pages/origin/origin.wxml-->
+<view class="container">
+  <SearchBar theme="{{theme}}" keyword=""></SearchBar>
+  <!--侧边栏-->
+  <view class="classifyBar">
+          <view class="item {{index == activeIndex ? 'active':''}}" wx:for="{{originList}}" wx:key="index" bindtap="onOriginTap" data-index="{{index}}">
+              <text style="{{index == activeIndex ? theme.styles.primaryReverseStyle:''}}">{{item.origin_name}}</text>
+          </view>
+  </view>
+
+  <!-- main -->
+  <view class="mainBox">
+    <view class="list-wrap" wx:for="{{assortmentList}}" wx:key="index">
+      <view class="assortmentHead"><text style="{{theme.styles.primaryText}}">{{item.assortment}}</text></view>
+        <scroll-view scroll-y="true" style="height: {{scrollHeight}}px" bindscrolltolower="loadMoreProduct">
+            <block wx:for="{{item.list}}" wx:for-item="item" wx:key="index">
+            <!--<template is="productView2" data="{{...o, originImg: originImgs[o.origin], theme}}" data-index="{{index}}"/>-->
+                  <view class="product-view2"  bindtap="onProductTap" data-index="{{index}}">
+                      <image class="product-img2" src="{{item.img}}"></image>
+                      <text class="product-text2">{{item.name}}</text>
+                      <text class="product-price2" style="{{theme.styles.primaryText}}">￥{{item.sale_price}}</text>
+                      <image class="origin-img" src="{{item.origin_img}}"></image>
+                  </view>
+            </block>
+        </scroll-view>
+    </view>
+  </view>
+</view>

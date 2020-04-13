@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "产地",
+  "usingComponents": {
+    "SearchBar": "/components/SearchBar/SearchBar"
+  }
+}

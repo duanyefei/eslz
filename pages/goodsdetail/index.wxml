@@ -1,0 +1,22 @@
+<scroll-view scroll-y="true" style="height: 1400rpx;">
+  <view class="scroll-y" >
+<view class="container">
+
+    <view>
+        <image src="https://bangni.oss-cn-hangzhou.aliyuncs.com/{{img}}" class="slide-image"/>
+    </view>
+
+    <view class="shopping_container">
+        <view class="title">{{name}}</view>
+        <view class="reason">￥{{price}}</view>
+    </view>
+
+    <view class="content">
+        <view>灵芝对人类的肝脏有明显保护作用，它不单能减少药物和病毒对人类肝脏的伤害，而且能修复受损的肝细胞，灵芝对人类的肝脏有明显保护作用，它不单能减少药物和病毒对人类肝脏的伤害，而且能修复受损的肝细胞，灵芝对人类的肝脏有明显保护作用，它不单能减少药物和病毒对人类肝脏的伤害，而且能修复受损的肝细胞，</view>
+    </view>
+        <view class="btn-area">
+            <button style="background-color:{{loginBtnBgBgColor}}"  bindtap='subFormData' formType="submit"  loading="{{btnLoading}}"> {{loginBtnTxt}} </button>
+        </view>
+</view>
+</view>
+</scroll-view>

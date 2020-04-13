@@ -1,0 +1,33 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="logo-block">
+
+    <block>
+
+            <button class="own-box" open-type='getUserInfo' bindgetuserinfo="getUserInfo">
+
+          <image class="img-own" src="{{userimg}}" data-id="" data-name="" bindtap="onRegistTap"></image>
+          <view class="username">{{username}}</view>
+          </button>
+    </block>
+    <block>
+      <image class="img-publish" src="/img/index_publish.gif" data-id="" data-name="" bindtap="onLogoTap"></image>
+    </block>
+      <block>
+      <image class="img-good" src="/img/index_good.gif" data-id="" data-name="" bindtap="onGoodsTap"></image>
+    </block>
+    <block>
+      <image class="img-sell" src="/img/index_sell.gif" data-id="" data-name="" bindtap="onSellerListTap"></image>
+    </block>
+    <block>
+      <image class="img-join" src="/img/index_join.gif" data-id="" data-name="" bindtap=""></image>
+    </block>
+      <block>
+      <image class="img-set" src="/img/index_set.gif" data-id="" data-name="" bindtap="onSetTap"></image>
+    </block>
+    <block>
+      <image class="img-help" src="/img/index_help.gif" data-id="" data-name="" bindtap=""></image>
+    </block>
+
+  </view>
+</view>

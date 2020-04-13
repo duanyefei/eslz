@@ -1,0 +1,24 @@
+<view class="content">
+
+       <view class='data'>
+          <view class='item'>
+            <text>卖家姓名</text>
+            <input type='text' value="{{username}}" bindinput="bindKeyUsername" placeholder='请输入真实姓名'></input>
+          </view>
+          <view class='item'>
+                <text>手机号</text>
+                <input type='text' value="{{phone}}" bindinput="bindKeyPhone" placeholder='请输入正在使用的手机号'></input>
+          </view>
+          <view class='item'>
+              <text>地址</text>
+              <input type='text' value="{{address}}" bindinput="bindKeyAddress" placeholder='请输入详细地址'></input>
+          </view>
+
+
+        </view>
+        <view class="btn-area">
+            <button  disabled="{{disabled}}" style="background-color:{{loginBtnBgBgColor}}"  bindtap='submitFun' formType="submit"  loading="{{btnLoading}}"> {{loginBtnTxt}} </button>
+        </view>
+
+
+</view>

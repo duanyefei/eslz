@@ -1,0 +1,24 @@
+<scroll-view style='height:100vh'>
+
+  <scroll-view scroll-y class='list' style='height:100vh'>
+    <view class='item' wx:for="{{list}}">
+
+      <navigator class='content' hover-class="none" url="/pages/goodsdetail/index?img={{item.main_image}}&name={{item.name}}&price={{item.market_price}}">
+        <image src='https://bangni.oss-cn-hangzhou.aliyuncs.com/{{item.main_image}}'></image>
+        <view class='text'>
+          <view class='title'>
+              <view class='username'>{{item.name}}</view>
+              <view class='phone'>￥{{item.market_price}}</view>
+          </view>
+
+          <view class='spec'>灵芝对人类的肝脏有明显保护作用，它不单能减少药物和病毒对人类肝脏的伤害，而且能修复受损的肝细胞，它能加快毒素代谢防止毒素在肝脏部位堆积。</view>
+
+        </view>
+      </navigator>
+    </view>
+
+  </scroll-view>
+
+</scroll-view>
+
+

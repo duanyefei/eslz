@@ -1,0 +1,15 @@
+<view class="content">
+
+    <form bindsubmit="formSubmit">
+        <view class="input-area">
+          <!--<input id="username" name="username" maxlength='40' type="text" placeholder="邮箱/手机号" />-->
+          <input id="password" name="password" maxlength='20' type="password" placeholder="密码" style="border-bottom: 1px solid #ddd;"/>
+          <input id="repassword" name="repassword" maxlength='20' type="password" placeholder="确认密码" />
+        </view>
+        <view class="btn-area">
+            <button  disabled="{{disabled}}" style="background-color:{{loginBtnBgBgColor}}"   formType="submit"  loading="{{btnLoading}}"> {{loginBtnTxt}} </button>
+        </view>
+    </form>
+
+
+</view>

@@ -1,0 +1,3 @@
+.wxpay_logo{width: 500rpx; margin: 100rpx auto 0}
+.wxpay_logo image{width: 100%}
+.wxpay_btn{width: 500rpx; height: 80rpx; line-height: 80rpx; margin-top: 50rpx}

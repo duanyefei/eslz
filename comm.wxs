@@ -1,0 +1,19 @@
+var foo = "'hello world' from comm.wxs";
+var bar = function(d){
+  return d;
+}
+module.exports =  {
+  foo:foo,
+  bar:bar
+}
+var msg = function () {
+  return 40
+}
+module.exports.msg=function(){
+  ruturn(10 + 20 )
+}
+
+for (var i = 0; i < 3; ++i) {
+  console.log(i);
+  if (i >= 1) break;
+}

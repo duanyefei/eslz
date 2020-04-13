@@ -1,0 +1,178 @@
+.main{
+ 
+  height: 100vh;
+  background: #e8e9e8;
+}
+.item{
+  display: flex;
+  border-bottom: 1px solid #eeeeee;
+  line-height: 98rpx;
+}
+.data{
+  background: #fff;
+  padding: 0 20rpx;
+}
+.item text {
+  flex: 0 1 15%;
+  font-size: 30rpx;
+  color: #303030;
+}
+.item-else {
+  line-height: 98rpx;
+  font-size: 30rpx;
+  color: #303030;
+  margin-left: 20rpx;
+}
+.item-more {
+    line-height: 98rpx;
+    font-size: 30rpx;
+    background: #fff;
+    padding-left: 27rpx;
+    margin-top: 17rpx;
+}
+.item .price {
+  color: #303030;
+}
+.item .code {
+   flex: 0 1 70%;
+   color: #303030;
+}
+.item input{
+  flex: 1 1 auto;
+  font-size: 30rpx;
+  color: #aaaaaa;
+  line-height: 40px;
+  height: 40px;
+}
+
+.item .code{
+    flex: 0 1 25%;
+    font-size: 12px;
+    color:#eeeeee;
+    border-left: 1px solid #eeeeee;
+    text-align: center;
+    height: 24px; 
+    margin: 8px 0;
+    line-height: 24px;
+}
+
+.item .icon{
+  flex: 0 1 10%;
+  text-align: right;
+}
+
+.item picker{
+ flex: 1 1 auto;
+ font-size:30rpx;
+}
+
+.item .icon image{
+  width:8px;
+  height:15px;
+}
+
+.text{
+  font-size: 12px;
+  color: #999999;
+  background: #fff;
+  padding: 10px 20px;
+}
+
+.btn{
+  line-height: 97rpx;
+  background: #E5E5E5;
+  font-size: 18px;
+  color: #FFFFFF;
+  text-align:center;
+  margin:50rpx 50rpx;
+  border-radius:2px;
+}
+.btn1{
+  line-height: 97rpx;
+  background: #E5E5E5;
+  font-size: 18px;
+  color: #FFFFFF;
+  text-align:center;
+  margin:50rpx 50rpx;
+  border-radius:2px;
+}
+.active{
+  background:#FFB90F;
+}
+
+
+
+
+/* pages/putmes/putmes.wxss */
+page{
+ background-color: #f7f7ff;
+}
+.optClass{
+    background-color: #fff;
+    box-sizing: border-box;
+    font-size: 32rpx;
+    color: #333;
+    display: flex;
+    align-items: center;
+    padding:0 30rpx;
+    flex-wrap:wrap;
+    height: 277rpx;
+}
+.optClass .optName{
+    width: 200rpx;
+}
+.optClass .optName text,.optClass .mesTit text{
+    color: #ce0a0a;
+}
+.optClass .optContent{
+    flex: 1;
+    text-align: right;
+    color: #666;
+    font-size: 32rpx;
+    font-size:24rpx;
+    color:#999;
+}
+
+.optClass .uploadimgbox{
+    flex: 0 0 33.333%;
+    position: relative;
+    box-sizing: border-box;
+    padding: 10rpx;
+    margin-bottom: 10rpx;
+}
+.optClass .uploadimgbox .progress{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .5);
+    color: #fff;
+    font-size: 30rpx;
+    text-align: center;
+    line-height: 208rpx;
+    z-index: 99;
+}
+.optClass .uploadimgbox .delbtn{
+    width: 50rpx;
+    height: 50rpx;
+    position: absolute;
+    top: 10rpx;
+    right: 10rpx;
+    background-color: rgba(0, 0, 0, .5);
+    color: #fff;
+    font-size: 30rpx;
+    text-align: center;
+    line-height: 50rpx;
+    z-index: 98;
+}
+.optClass .uploadimg,.optClass .uploadbtn{
+    display: block;
+    width: 100%;
+    height: 208rpx;
+}
+.optClass .uploadimg,.optClass .uploadbtn1{
+    display: block;
+    width: 100%;
+    height: 208rpx;
+}

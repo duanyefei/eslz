@@ -1,0 +1,31 @@
+<view class="content">
+
+    <form bindsubmit="formSubmit">
+     <view class='data item-else'>
+
+        <view class='item'>
+          <textarea type='text' value="{{content}}" bindinput="bindKeyContent" placeholder='请把你的想法告诉我们'></textarea>
+        </view>
+
+        <view class="optClass" style='padding:0 30rpx;flex-wrap:wrap;  display: flex;border-bottom: 1px solid #eeeeee;'>
+            <view class='uploadimgbox' wx:for="{{upImgArr}}" wx:key="item">
+                <image class='uploadimg' src='{{item.path}}' data-presrc="{{item.path}}" bindtap='previewImg' mode='aspectFill'></image>
+                <cover-view class='progress' wx:if="{{upFilesProgress}}">
+                    {{item.progress}}%
+                </cover-view>
+                <cover-view class='delbtn' data-index="{{index}}" data-type="image" bindtap='delFile'>X</cover-view>
+            </view>
+
+            <view class='uploadimgbox' wx:if="{{upFilesBtn}}">
+                <image class='uploadbtn' bindtap='uploadFiles' src='/img/addimgsbtn.png'></image>
+            </view>
+        </view>
+
+        </view>
+        <view class="btn-area">
+            <button  disabled="{{disabled}}" style="background-color:{{loginBtnBgBgColor}}"  bindtap='subFormData' formType="submit"  loading="{{btnLoading}}"> {{loginBtnTxt}} </button>
+        </view>
+    </form>
+
+
+</view>

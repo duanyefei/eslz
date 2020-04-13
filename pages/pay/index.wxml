@@ -1,0 +1,20 @@
+<view class="content">
+
+    <form bindsubmit="formSubmit">
+       <view class='data'>
+          <view class='item'>
+            <text>卡号</text>
+            <input type='text' value="{{name}}" bindinput="bindKeyName" placeholder=''></input>
+          </view>
+           <view class='item'>
+            <text>保证金额度：</text>
+            <input type='number' value="{{mobile}}" bindinput="bindKeyMobile"  placeholder='最低额度为300元'></input>
+          </view>
+        </view>
+        <view class="btn-area">
+            <button  disabled="{{disabled}}" style="background-color:{{loginBtnBgBgColor}}"   formType="submit"  loading="{{btnLoading}}"> {{loginBtnTxt}} </button>
+        </view>
+    </form>
+
+
+</view>

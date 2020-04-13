@@ -1,0 +1,95 @@
+<view class="main">
+<!--pages/index/index.wxml-->
+
+   <view class='data item-else'>
+      <view class='item'>
+        <input type='text' value="{{title}}" bindinput="bindKeyTitle" placeholder='标题'></input>
+      </view>
+
+      <view class='item'>
+        <textarea type='text' value="{{description}}" bindinput="bindKeyDescription" placeholder='描述下您的宝贝'></textarea>
+      </view>
+
+
+<view class="optClass" style='padding:0 30rpx;flex-wrap:wrap;  display: flex;border-bottom: 1px solid #eeeeee;'>
+    <view class='uploadimgbox' wx:for="{{upImgArr}}" wx:key="item">
+        <image class='uploadimg' src='{{item.path}}' data-presrc="{{item.path}}" bindtap='previewImg' mode='aspectFill'></image>
+        <cover-view class='progress' wx:if="{{upFilesProgress}}">
+            {{item.progress}}%
+        </cover-view>
+        <cover-view class='delbtn' data-index="{{index}}" data-type="image" bindtap='delFile'>X</cover-view>
+    </view>
+
+    <view class='uploadimgbox' wx:if="{{upFilesBtn}}">
+        <image class='uploadbtn' bindtap='uploadFiles' src='/img/addimgsbtn.png'></image>
+    </view>
+</view>
+
+
+
+    <view class='item'>
+      <text>地区</text>
+      <picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
+        <view class="picker">
+          {{region[0]}} {{region[1]}} {{region[2]}}
+        </view>
+      </picker>
+      <view class='icon'>
+      <image src='/img/my_order.png'></image>
+      </view>
+    </view>
+
+    <view class='item'>
+      <text>详细地址</text>
+      <input type='text' bindinput="bindKeyDetailed"  value="{{detailed}}" placeholder='街道门牌号信息'></input>
+    </view>
+    </view>
+
+
+
+  <view class='data'>
+    <view class='item'>
+      <text>卖方</text>
+      <input type='text' value="{{name}}" bindinput="bindKeyName" placeholder='请输入卖方姓名'></input>
+    </view>
+     <view class='item'>
+      <text>手机</text>
+      <input type='number' value="{{mobile}}" bindinput="bindKeyMobile"  placeholder='请输入卖方手机号码'></input>
+    </view>
+    <view class='item'>
+      <text>原价</text>
+      <input class='price' type='number' value="{{price}}" bindinput="bindKeyPrice" placeholder='￥0.00'></input>
+    </view>
+     <view class='item'>
+      <text>二手价</text>
+      <input class='price' type='number' value="{{secondprice}}" bindinput="bindKeySecondprice"  placeholder='￥0.00'></input>
+    </view>
+    <view class="item">
+     <text>分类</text>
+     <Select prop-array='{{type}}' bind:myget='getDate'></Select>
+
+    </view>
+  </view>
+
+
+    <view class='data item item-else'>
+<radio-group class="radio-group" bindchange="radioChange">
+  <label class="radio" wx:for="{{items}}">
+    <radio class="radio" value="{{item.name}}" checked="{{item.checked}}" disabled="{{item.disabled}}" />{{item.value}}
+  </label>
+</radio-group>
+</view>
+
+    <view class='data item item-else'>
+
+      <text>服务费</text>
+      <input type='number' value="{{serverpay}}" disabled='disabled' placeholder='同意认证后收取二手价18%'></input>
+    </view>
+
+
+      <view class="btn-area">
+            <button  disabled="{{disabled}}" style="background-color:{{loginBtnBgBgColor}}"  bindtap='subFormData' formType="submit"  loading="{{btnLoading}}"> {{loginBtnTxt}} </button>
+        </view>
+</view>
+
+

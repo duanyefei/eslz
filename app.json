@@ -1,0 +1,28 @@
+{
+  "debug": true,
+  "enablePullDownRefresh": true,
+  "pages": [
+    "pages/index/index",
+    "pages/goods/goods",
+    "pages/goodsdetail/index",
+    "pages/sellerList/index",
+    "pages/seller/index",
+    "pages/publish/publish",
+    "pages/realname/realname",
+    "pages/regist/index",
+    "pages/login/index",
+    "pages/findpassword/index",
+    "pages/set/index",
+    "pages/editpassword/index",
+    "pages/pay/index",
+    "pages/payment/payment",
+    "pages/feedback/index"
+  ],
+  "window": {
+    "navigationBarTitleText": "二手流转",
+    "navigationBarBackgroundColor": "#FFB90F",
+    "navigationBarTextStyle": "white"
+  },
+
+  "sitemapLocation": "sitemap.json"
+}

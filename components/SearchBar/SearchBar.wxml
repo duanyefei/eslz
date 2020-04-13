@@ -1,0 +1,8 @@
+<!--components/SearchBar/SearchBar.wxml-->
+<view class="searchBar" style="{{theme.styles.primaryReverseStyle}}">
+  <image class="scanButton" src="/img/icon-scan.png" bindtap='onScan'></image>
+  <navigator class="searchInput" url="/pages/search/search-index">
+    <image class="iconSearch" src="/img/icon-search.png"></image>
+    <text class="keywords">{{keyword}}</text>
+  </navigator>
+</view>

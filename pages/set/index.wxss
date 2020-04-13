@@ -1,0 +1,25 @@
+.main{
+  height: 100vh;
+  background: #e8e9e8;
+}
+.item{
+  display: flex;
+  border-bottom: 1px solid #eeeeee;
+  line-height: 98rpx;
+}
+.data{
+  background: #fff;
+  padding: 0 20rpx;
+}
+.item-else {
+  margin: 20rpx 0 10rpx;
+  line-height: 98rpx;
+  font-size: 30rpx;
+  color: #303030;
+}
+.item navigator {
+  flex: 0 1 25%;
+  font-size: 30rpx;
+  color: #303030;
+}
+

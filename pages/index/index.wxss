@@ -1,0 +1,160 @@
+/**index.wxss**/
+.container {
+  background-color: #f2f2f2;
+}
+
+.logo-block {
+  position: absolute;
+  top: 0rpx;
+  bottom: 0rpx;
+  padding-bottom: 0;
+  padding-right: 0;
+  overflow: auto;
+}
+
+
+.img-own {
+    margin-top: 25%;
+    float: center;
+    border-radius: 100rpx;
+    width: 42%;
+    height: 38%;
+}
+.username {
+text-align:center;
+}
+.own-box {
+  display: block;
+  margin-top: 0rpx;
+  float: left;
+  width: 367rpx;
+  height: 339rpx;
+  background:#FFFAFA;
+}
+
+.img-publish {
+  display: block;
+  margin-top: 0rpx;
+  float: right;
+  border-radius: 10rpx;
+  width: 367rpx;
+  height: 339rpx;
+}
+.img-good {
+  display: block;
+  margin-top: 20rpx;
+  margin-left: 15rpx;
+  float: left;
+  border-radius: 10rpx;
+  width: 350rpx;
+  height: 172rpx;
+}
+.img-sell {
+  display: block;
+  margin-top: 20rpx;
+  margin-right: 15rpx;
+  float: right;
+  border-radius: 10rpx;
+  width: 350rpx;
+  height: 172rpx;
+}
+
+.img-join {
+  display: block;
+  margin-top: 20rpx;
+  border-radius: 10rpx;
+  width: 720rpx;
+  height: 172rpx;
+  text-align: center;
+  margin-left:15rpx;
+}
+.img-set {
+  display: block;
+  margin-top: 20rpx;
+  margin-left: 15rpx;
+  float: left;
+  border-radius: 10rpx;
+  width: 350rpx;
+  height: 172rpx;
+}
+.img-help {
+  display: block;
+  margin-top: 20rpx;
+  margin-right: 15rpx;
+  float: right;
+  border-radius: 10rpx;
+  width: 350rpx;
+  height: 172rpx;
+}
+
+.logo-top {
+  width: 690rpx;
+  height: 218rpx;
+}
+
+.slide-block {
+  position: absolute;
+  left: 0;
+  top: 80rpx;
+  right: 0;
+  bottom: 0;
+  background: rgba(50, 50, 50, 0);
+  overflow: hidden;
+  visibility: hidden;
+  transition: visibility 0s linear 0.5s;
+}
+
+.slide-show {
+  visibility: visible;
+  transition-delay: 0s;
+}
+
+.slide-show > .menu-list {
+  left: 0;
+}
+
+.menu-list {
+  width: 230rpx;
+  height: 100%;
+  background: #fff;
+  border: 1px solid #d9d9d9;
+  border-bottom: none;
+  float: right;
+  background: #fff;
+  box-sizing: border-box;
+  position: relative;
+  left: 230rpx;
+  transition: left 0.5s ease-in;
+}
+
+.menu {
+  display: flex;
+  border-bottom: 1px solid #d9d9d9;
+  height: 80rpx;
+  width: 100%;
+  text-align: left;
+  line-height: 80rpx;
+  color: #333;
+  font-size: 11pt;
+  align-items: center;
+}
+
+.menu > image {
+  height: 36rpx;
+  width: 36rpx;
+  margin-left: 20rpx;
+  margin-right: 14rpx;
+}
+
+.menu > .text-center {
+  width: 100%;
+  margin-left: 20rpx;
+}
+
+.red {
+ color: #f05773;
+}
+
+button {
+ display:
+}

@@ -1,0 +1,26 @@
+<view style='height:100vh'>
+
+  <scroll-view scroll-y class='list' style='height:92vh'>
+    <view class='item' wx:for="{{list}}" wx:for-item="item" wx:key="id">
+
+      <navigator class='content' hover-class="none" url="/pages/seller/index?id={{item.id}}&username={{item.username}}&phone={{item.phone}}&address={{item.address}}&openid={{this.data.openid}}">
+        <image src='/img/seller.jpg'></image>
+        <view class='text'>
+          <view class='title'>
+              <text class='username'>{{item.username}}</text>
+              <text class='phone'>{{item.phone}}</text>
+          </view>
+
+          <view class='spec'>{{item.address}}</view>
+
+        </view>
+      </navigator>
+    </view>
+
+  </scroll-view>
+<navigator url="/pages/seller/index" class='btn'>
+ 新增卖家
+</navigator>
+</view>
+
+

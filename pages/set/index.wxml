@@ -1,0 +1,19 @@
+<view class='main'>
+<view class='data'>
+    <view class='item'>
+        <navigator url="/pages/editpassword/index" hover-class="navigator-hover">修改密码</navigator>
+    </view>
+     <view class='item'>
+        <navigator url="/pages/realname/realname" hover-class="navigator-hover">实名认证</navigator>
+    </view>
+ </view>
+   <view class='data item-else'>
+         <!--<view class='item'>
+              <navigator url="/pages/pay/index" hover-class="navigator-hover">缴纳保证金</navigator>
+         </view>-->
+        <navigator url="/page/navigate/navigate?title=navigate" hover-class="navigator-hover">清除缓存</navigator>
+     </view>
+    <view class="data item-else">
+        <navigator url="/pages/feedback/index" hover-class="navigator-hover">我的反馈</navigator>
+     </view>
+ </view>
