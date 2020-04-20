@@ -5,30 +5,94 @@ let productService = require('../../service/product')
 Page({
     data: {
         theme: app.globalData.theme,
-        goods_current_page:0, //当前页
-        limit:50  ,             //每页产品请求数量
+        page:1, //当前页
+        pageSize: 5,
+        hasMoreData: true,
+        limit:6,             //每页产品请求数量
         list: []
     },
-    onLoad: function () {
-        this.showLoading();
-        productService.getGoodsList(this.data.goods_current_page, this.data.limit).then(data => {
-            console.log(data);
-            this.setData({
-                list: data.respond.products
-            });
-            this.hideLoading();
+
+    getInfo: function () {
+
+        productService.getGoodsList(this.data.page, this.data.limit).then(data => {
+            var contentlistTem = this.data.list;
+            if (this.data.page == 1) {
+                contentlistTem = []
+            }
+            var contentlist = data.respond.products;
+            if (contentlist.length < this.data.pageSize) {
+                this.setData({
+                    list: contentlistTem.concat(contentlist),
+                    hasMoreData: false
+                })
+            } else {
+                this.setData({
+                    list: contentlistTem.concat(contentlist),
+                    hasMoreData: true,
+                    page: this.data.page + 1
+                })
+            }
+
+
+
         });
     },
 
-    //页面显示加载动画
-    showLoading: function () {
-        wx.showNavigationBarLoading();
-        wx.showLoading({title: '加载中'});
+    /**
+     * 生命周期函数--监听页面加载
+     */
+    onLoad: function (options) {
+        var that = this;
+        that.getInfo();
     },
 
-    //页面隐藏加载动画
-    hideLoading: function () {
-        wx.hideNavigationBarLoading();
-        wx.hideLoading();
+    /**
+     * 生命周期函数--监听页面初次渲染完成
+     */
+    onReady: function () {
+
     },
+
+    /**
+     * 生命周期函数--监听页面显示
+     */
+    onShow: function () {
+
+    },
+
+    /**
+     * 生命周期函数--监听页面隐藏
+     */
+    onHide: function () {
+
+    },
+
+    /**
+     * 生命周期函数--监听页面卸载
+     */
+    onUnload: function () {
+
+    },
+
+    /**
+     * 页面相关事件处理函数--监听用户下拉动作
+     */
+    onPullDownRefresh: function () {
+        this.data.page = 1;
+        this.getInfo();
+    },
+
+    /**
+     * 页面上拉触底事件的处理函数
+     */
+    onReachBottom: function () {
+        if (this.data.hasMoreData) {
+            this.getInfo();
+        } else {
+            wx.showToast({
+                title: '没有更多数据',
+            })
+        }
+    },
+
 });

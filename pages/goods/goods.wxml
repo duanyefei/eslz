@@ -1,6 +1,6 @@
-<scroll-view style='height:100vh'>
+<view style='height:100vh'>
 
-  <scroll-view scroll-y class='list' style='height:100vh'>
+  <view class='list' style='height:100vh'>
     <view class='item' wx:for="{{list}}">
 
       <navigator class='content' hover-class="none" url="/pages/goodsdetail/index?img={{item.main_image}}&name={{item.name}}&price={{item.market_price}}">
@@ -17,8 +17,8 @@
       </navigator>
     </view>
 
-  </scroll-view>
+  </view>
 
-</scroll-view>
+</view>
 
 

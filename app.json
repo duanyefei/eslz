@@ -1,6 +1,5 @@
 {
   "debug": true,
-  "enablePullDownRefresh": true,
   "pages": [
     "pages/index/index",
     "pages/goods/goods",
